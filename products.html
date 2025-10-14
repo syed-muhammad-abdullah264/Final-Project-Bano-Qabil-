@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Jazmin Collection</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <!-- Same header as index.html -->
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +92 300 1234567</span>
+                <span><i class="fas fa-envelope"></i> info@Jazmincollection.com</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assits/logo/nav-logo.png" alt="Jazmin Collection">
+                    <span>Jazmin Collection</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Products</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> / <span>Products</span>
+                </div>
+            </div>
+
+            <div class="products-filter">
+                <div class="filter-section">
+                    <button class="filter-btn"><i class="fas fa-filter"></i> Filters</button>
+                    <div class="sort-by">
+                        <label>Sort by:</label>
+                        <select>
+                            <option>Default</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest First</option>
+                            <option>Popularity</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="products.html">All Products</a></li>
+                            <li><a href="products.html?category=shawls">Jazmin Shawls</a></li>
+                            <li><a href="products.html?category=silk">Silk Fabrics</a></li>
+                            <li><a href="products.html?category=bridal">Bridal Collection</a></li>
+                            <li><a href="products.html?category=stoles">Stoles & Scarves</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" min="1000" max="50000" value="50000">
+                            <div class="range-values">
+                                <span>Rs. 1000</span>
+                                <span>Rs. 50000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="apply-filters">Apply Filters</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded via JavaScript -->
+
+                <!-- Product 1 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/1.jpg" alt="Wireless Headphones">
+                        <span class="product-badge">Sale</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Silk Fabrics</h3>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$129.99</span>
+                            <span class="discount">30% off</span>
+                        </div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-1.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Product 2 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/2.jpeg" alt="Smart Watch">
+                        <span class="product-badge">New</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Silk Fabrics</h3>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$179.99</span>
+                            <span class="discount">17% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-2.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Product 3 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/3.jpg" alt="Running Shoes">
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shawl</div>
+                        <h3 class="product-title">Jazmin Shawls</h3>
+                        <div class="product-price">
+                            <span class="current-price">$129.99</span>
+                        </div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-3.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Product 4 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/4.jpeg" alt="Sunglasses">
+                        <span class="product-badge">Bestseller</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Silk Fabrics</h3>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                            <span class="original-price">$99.99</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-4.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Product 5 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/5.jpg" alt="Wireless Headphones">
+                        <span class="product-badge">Sale</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Jazmin Prince</h3>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$129.99</span>
+                            <span class="discount">30% off</span>
+                        </div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-5.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Product 6 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/6.jpg" alt="Wireless Headphones">
+                        <span class="product-badge">Sale</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Jazmin Prince</h3>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$129.99</span>
+                            <span class="discount">30% off</span>
+                        </div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-6.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Product 7 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/7.jpeg" alt="Running Shoes">
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cloth</div>
+                        <h3 class="product-title">Silk Fabrics</h3>
+                        <div class="product-price">
+                            <span class="current-price">$129.99</span>
+                        </div>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-7.html" class="btn btn-outline">View Details</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Product 8 -->
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="assits/image/products/8.jpeg" alt="Smart Watch">
+                          <button class="btn btn-primary">Add to Cart</button>
+                            <a href="product-detail-8.html" class="btn btn-outline">View Details</a>
+                        </  <span class="product-badge">New</span>
+                        <button class="product-wishlist">♥</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Shawl</div>
+                        <h3 class="product-title">Jazmin Shawls</h3>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$179.99</span>
+                            <span class="discount">17% off</span>
+                        </div>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-actions">
+                        div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-btn disabled"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Jazmin Collection</h3>
+                    <p>Premium quality textiles and fabrics since 2002. We bring you authentic Jazmin products directly
+                        from the artisans.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Textile Street, Karachi, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92 300 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@Jazmincollection.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Jazmin Collection. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <img src="assits/icon/VISA-logo.png" alt="Visa">
+                    <img src="assits/icon/MasterCard_Logo.svg.png" alt="Mastercard">
+                    <img src="assits/icon/jazz-cash-logo.png" alt="JazzCash">
+                    <img src="assits/icon/Easypaisa-Icon-Vector.jpg" alt="EasyPaisa">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+        
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        let currentTestimonial = 0;
+        
+        function showTestimonial(n) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            currentTestimonial = (n + testimonials.length) % testimonials.length;
+            testimonials[currentTestimonial].classList.add('active');
+        }
+        
+        // Auto change testimonial every 7 seconds
+        setInterval(() => {
+            showTestimonial(currentTestimonial + 1);
+        }, 7000);
+    </script> -->
+    <script src="./product.js"></script>
+</body>
+
+</html>
