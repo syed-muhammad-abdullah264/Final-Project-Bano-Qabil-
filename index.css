@@ -48,7 +48,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 8px 32px var(--glass-shadow);
             position: relative;
-            /* overflow: hidden; */
+            overflow: hidden;
             z-index: 1;
         }
         
