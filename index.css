@@ -592,7 +592,7 @@
         /* Responsive Styles */
         @media (max-width: 992px) {
              .hero-banner {
-                height: 22vh;
+                height: 24vh;
             }
 
             .hero-content h1 {
