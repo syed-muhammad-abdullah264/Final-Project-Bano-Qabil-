@@ -94,17 +94,24 @@
         
         /* Top Bar */
         .top-bar {
-            background: var(--primary-color);
-            color: var(--light-text);
-            padding: 8px 0;
-            font-size: 0.9rem;
-        }
-        
-        .top-bar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    background: var(--primary-color);
+    color: var(--light-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+
+.top-bar span,
+.top-bar a,
+.top-bar i {
+    font-size: 14px;
+    white-space: nowrap;
+}
         
         .contact-info span {
             margin-right: 20px;
