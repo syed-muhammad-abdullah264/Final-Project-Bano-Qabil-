@@ -242,36 +242,15 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.main-nav').classList.toggle('active');
   });
 
-  // Testimonial Slider
-  // const testimonials = document.querySelectorAll('.testimonial');
-  // let currentTestimonial = 0;
-  // function showTestimonial(n) {
-  //     testimonials.forEach(t => t.classList.remove('active'));
-  //     currentTestimonial = (n + testimonials.length) % testimonials.length;
-  //     testimonials[currentTestimonial].classList.add('active');
-  // }
-  // setInterval(() => showTestimonial(currentTestimonial + 1), 7000);
-
-  // // Theme Toggle
-  // const themeToggle = document.querySelector('.theme-toggle');
-  // const themeIcon = themeToggle.querySelector('i');
-
-  // if (localStorage.getItem('theme') === 'dark') {
-  //   document.body.classList.add('dark-mode');
-  //   themeIcon.classList.replace('fa-moon', 'fa-sun');
-  // }
-
-  // themeToggle.addEventListener('click', () => {
-  //   document.body.classList.toggle('dark-mode');
-
-  //   if (document.body.classList.contains('dark-mode')) {
-  //     themeIcon.classList.replace('fa-moon', 'fa-sun');
-  //     localStorage.setItem('theme', 'dark');
-  //   } else {
-  //     themeIcon.classList.replace('fa-sun', 'fa-moon');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // });
+  Testimonial Slider
+  const testimonials = document.querySelectorAll('.testimonial');
+  let currentTestimonial = 0;
+  function showTestimonial(n) {
+      testimonials.forEach(t => t.classList.remove('active'));
+      currentTestimonial = (n + testimonials.length) % testimonials.length;
+      testimonials[currentTestimonial].classList.add('active');
+  }
+  setInterval(() => showTestimonial(currentTestimonial + 1), 7000);
 });
 </script>
 
